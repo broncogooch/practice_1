@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//This program is used to roll the two dice and returns the output
 namespace practice_1
 {
     internal class dice

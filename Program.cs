@@ -72,17 +72,24 @@ internal class Program
             }
         }
 
+        //This calculates the asterisks to be sent as the output
         for (int i = 0; i < RollsArray.Length; i++)
         {
+            //This gets what percent each of the numbers was rolled
             float percent = (float)RollsArray[i] / NumOfRolls;
             int scaledPercent = (int)(percent * 100);
             string astOutput = "";
+            
+            //This adds each of the asterisks needed to the string astOutput
             for (int j = 0; j < scaledPercent; j++)
             {
                 astOutput = astOutput + "*";
             }
+            
+            //Each iteration adds to the FinalOutput string, which has all the information that needs to be written
             FinalOutput = FinalOutput + (i + 2) + ": " + astOutput + "\n";
         }
+        //This writes the final messages and the asterisks to the user
         Console.WriteLine(FinalOutput);
         Console.WriteLine("Thank you for using the dice throwing simulator. Goodbye!\r\n");
     }
